@@ -1,11 +1,15 @@
 
 
 
-**Scenario:** This is an example where we try to install the nginx service on a CENTOS host.
-**Playground:** Create a CENTOS VM on Virtualbox an do the following:
-	1. Create a NAT adapter and a bridged adapter and forward the port 22 (on the NAT Adapter for guest port 22 and host ip 127.0.0.1).
-	2. In the host MAC os install sshpass.
-	3. Run the YAML playbook using the command 
+**Scenario:** 
+
+This is an example where we try to install the nginx service on a CENTOS host.
+
+**Playground:** 
+Create a CENTOS VM on Virtualbox an do the following:
+1. Create a NAT adapter and a bridged adapter and forward the port 22 (on the NAT Adapter for guest port 22 and host ip 127.0.0.1).
+2. In the host MAC os install sshpass.
+3. Run the YAML playbook using the command 
 				
 	_ansible-playbook -i inventory.cfg nginx_virtualbox.yml --ask-pass --ask-become-pass_
 
